@@ -1,0 +1,18 @@
+<h1>Main#xxx</h1>
+<p>Find me in app/views/main/xxx.html.erb</p>
+
+
+<br>
+<% for i in 1..10 do %>
+  <%= i*10%>
+<% end %>
+
+<br>
+The current date is <%= Date.today%>
+<br>
+The current time is <%= Time.zone.now%>
+
+<br>
+The user supplies param a as <%=params[:a]%>
+<br>
+The result is <%= @result%>
