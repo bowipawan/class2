@@ -1,5 +1,38 @@
 <h1>Ex2#loop</h1>
-<p>Find me in app/views/ex2/loop.html.erb</p>
-<% for i in @a..@b %>
-  <% puts i %>
+
+<br>
+<% if @a == nil %>
+  Please insert param a
+<% else %>
+  <% begin %> 
+    <% Integer(@a) %>
+  <% rescue %>
+    <%= "Your a param is not an integer" %>
+  <% else %>
+    Your a param is <%= @a %>
+  <% end %>
+<% end %>
+
+<br>
+<% if @b == nil %>
+  Please insert param b
+<% else %>
+  <% begin %> 
+    <% Integer(@b) %>
+  <% rescue %>
+    <%= "Your b param is not an integer" %>
+  <% else %>
+    Your b param is <%= @b %>
+  <% end %>
+<% end %>
+
+<% begin %>
+  <% Integer(@a) %>
+  <% Integer(@b) %>
+<% rescue %>
+<% else %>
+  <br>
+  <% for i in @a..@b %>
+    <%= i %>
+  <% end %>
 <% end %>
