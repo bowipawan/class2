@@ -1,0 +1,8 @@
+<h1><%= @user.name %>'s posts</h1>
+<br>
+<% @user.posts.each do |p|%>
+<b><%= p.msg %></b>
+<br>
+<%= p.created_at%>
+<br><br>
+<% end%>

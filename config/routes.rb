@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'post/create'
+  get 'user/read'
   get 'ex2/loop'
   get 'main/abc'
   get 'main/xxx'
